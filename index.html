@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
     <div class="header">
@@ -17,7 +19,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#interests">Interests</a></li>
-                <li><a href="images/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </div>
@@ -40,7 +42,9 @@
         <h2>About Me</h2>
         <div class="image-txt-container">
             <img src="images/batra.jpg" alt="Profile Picture" height=400px width=300px>
-            <p> <br><br><br>I am currently finishing up my third year of undergrad at the University of Michigan, Ann Arbor. Go Blue! Here, I am completing my B.S. in Computer Science, taking courses ranging from Web Development to Computer Security. In my free time, I like to dance, watch Netflix, and play basketball.  </p>
+            <p> <br><br>I am currently finishing up my third year of undergrad at the University of Michigan, Ann Arbor. Go Blue! Here, I am completing my B.S. in Computer Science, taking courses ranging from Web Development to Computer Security. In my free time, I like to dance, watch Netflix, and play basketball. <br><br>
+            Feel free to contact me at batrar@umich.edu or message me on any of my accounts down below!
+            </p>
             <img src="images/umich.png" alt="University of Michigan">
         </div>
     </div>
@@ -48,27 +52,82 @@
     <div class="experience" id = "experience">
         <h2>Experience</h2>
         <div class="container">
-            <div class="block">
+            <div class="block" style="background-color: rgba(15, 228, 139, 0.50);">
               <h2><br>Amazon</h2>
-              <p>Incoming Software Engineering Intern - Summer 2020</p>
+              <p>Incoming Software Engineering Intern - Summer 2020<br><br> <br></p>
               <img src="images/amazon.png" alt = "Amazon" width= 300px height = 125px style="margin: auto;">
             </div>
-            <div class="block">
+            <div class="block" style="background-color: rgba(0, 156, 247, 0.5);">
                 <h2><br>Garmin International</h2>
-                <p>Software Engineering Intern - Summer 2019</p>
-                <img src="images/garmin.png" alt = "Amazon" width= 150px height = 125px style="margin: auto; ">
+                <p>Software Engineering Intern - Summer 2019 <br><br> Automotive OEM</p>
+                <img src="images/garmin.png" alt = "Garming" width= 175px height = 125px style="margin: auto; ">
             </div>
-              <div class="block">
+              <div class="block" style="background-color: rgba(243, 78, 100, 0.5);">
                 <h2><br>ZF, North America</h2>
-                <p>Data Science Intern - Summer 2018 </p>
-                <img src="images/zf.png" alt = "Amazon" width= 125px height = 125px style="margin: auto;">
+                <p>Data Science Intern - Summer 2018 <br><br> IT Innovation</p>
+                <img src="images/zf.png" alt = "ZF" width= 180px height = 125px style="margin: auto;">
               </div>
           </div>
     </div>
     <hr>
     <div class="interests" id = "interests">
         <h2>Interests</h2>
-    <div>
+        <div class="containerhorizontal">
+            <button class="accordion"><h2>Sports</h2></button>
+            <div class="accordion-content" style="background-color:rgb(0, 255, 252);">
+            <p>
+                <br>
+            As a Michigan native, I have unfortunately grown up to watching Detroit sports. In my free time, though, I like to play pickup basketball, watch  NBA and college basketball/football, and play fantasy football. Here are some teams that I am a fan of:
+            <br> <br>
+            </p>
+
+            <img src="images/michbball.png" alt = "UMich Ball" width= 150px height = 150px style="margin: auto;">
+            <img src="images/lakers.png" alt = "Lakers" width= 200px height = 150px style="margin: auto;">
+            <img src="images/lions.png" alt = "Lions" width= 150px height = 150px style="margin-left: 10px;">
+            <img src="images/pistons.png" alt = "pistons" width= 150px height = 150 style="margin-left: 10px;">
+            <img src="images/raps.png" alt = "raptors" width= 150px height = 150 style="margin-left: 10px;">
+        </div>
+        
+            <button class="accordion" ><h2>Fashion</h2></button>
+            <div class="accordion-content" style="background-color:rgb(250, 0, 196);" >
+            <p>
+                <br>
+                In the past few years, I have immersed myself into streetwear, which has opened my eyes up to a whole new sphere of clothing. Here are some brands that I am a fan of:
+                <br><br>
+            </p>
+            <img src="images/kith.png" alt = "Supreme" width= 200px height = 100px style="margin-left: 20px;">
+            <img src="images/ovo.png" alt = "OVO" width= 100px height = 120px style="margin-left: 20px;">
+            <img src="images/patagonia.png" alt = "Patagonia" width= 150px height = 170px style="margin-left: 20px; display: inline-block;">
+            <img src="images/adidas.png" alt = "Adidas" width= 125px height = 150px style="margin-left: 20px;">
+            <img src="images/nike.png" alt = "Nike" width= 125px height = 100px style="margin-left: 20px; margin-right:auto">
+            </div>
+        
+        
+            <button class="accordion" ><h2>Dancing</h2></button>
+            <div class="accordion-content" style= "background-color:rgb(255, 241, 112);">
+            <p>
+                <br>
+                For the last couple years, I have been involved in a competitive dance-style called Bhangra (Indian Folk Dance). It is essentially a year-long committment with competitions all around the world. Here is a video of my dance team getting first place (I am in the green): 
+               <br> <br>
+               <iframe width="560" height="315" style="display:block; margin: auto" src="https://www.youtube.com/embed/GwYdr1nu1Nw?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <br>
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1 style="margin-left:40%; padding-right: 20px;">Contact Me:</h1>
+        <nav>
+            <ul>
+                <a></a>
+                <a href="#" target="_blank" class="fa fa-linkedin"></a>
+                <a href="#" target="_blank" class="fa fa-envelope"></a>
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+            </ul>
+        </nav>
+    </div>
+    
+    <script src="scripts/filename.js"></script>
 </body>
 </html>
 
