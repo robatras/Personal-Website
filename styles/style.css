@@ -191,12 +191,12 @@ p{
 }
 .about img, .experience img{
     margin-left: 200px;
-    margin-right: 100px;
+
 }
 .about p{
     color: black;
     margin-right: 150px;
-    margin-left: 200px;
+    margin-left: 250px;
 }
 
 .image-txt-container {
@@ -210,7 +210,7 @@ p{
     
 .image-txt-container img:last-child{
     width: 500px;
-    margin-left: 110px;
+    margin-left: 80px;
 }
 .container  {
     text-align: center;
@@ -241,7 +241,7 @@ p{
     margin: auto;
 
 }
-  
+
 .blockh p, .interests p{
        color: black;
        font-weight: lighter;
