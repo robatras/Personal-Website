@@ -31,11 +31,13 @@ body{
 .header h1{
     margin: auto;
     color: black;
+    margin-left: 100px;
+
 }
 
 nav{
     list-style: none;
-    margin-right: 50px;
+
 }
 
 nav li{
@@ -44,6 +46,7 @@ nav li{
 }
 
 nav li a{
+    font-size: 18px;
     transition: all 0.3s ease 0s;
     color: black;
 }
