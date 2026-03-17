@@ -15,3 +15,23 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
+// Hamburger menu toggle
+var hamburgerBtn = document.getElementById('hamburger-btn');
+var mainNav = document.getElementById('main-nav');
+
+if (hamburgerBtn && mainNav) {
+  hamburgerBtn.addEventListener('click', function() {
+    var isOpen = mainNav.classList.toggle('nav-open');
+    hamburgerBtn.classList.toggle('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Auto-close nav when a link is tapped (single-page scroll site)
+  mainNav.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mainNav.classList.remove('nav-open');
+      hamburgerBtn.classList.remove('is-open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+}

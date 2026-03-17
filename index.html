@@ -1,135 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rohan's Personal Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Rohan Batra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="header">
-        
-        <h1>Rohan Batra</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="https://drive.google.com/file/d/1CwhY9lU8Q3qojo9xOVdrzlZKM1RNZ6bJ/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <nav class="nav-links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#interests">Interests</a>
+            <a href="https://drive.google.com/file/d/1CwhY9lU8Q3qojo9xOVdrzlZKM1RNZ6bJ/view?usp=sharing" target="_blank">Resume</a>
         </nav>
-    </div>
-    <section>
-        <div class="curved">
-            <h2>Welcome!</h2>
-            <p>Hey! I'm Rohan. I am currently an MBA Candidate at Northwestern University, Kellogg School of Management and a recent graduate from the University of Michigan, Ann Arbor with a B.S. in Computer Science. Feel free to learn more about me by scrolling below!</p>
-            <a href="#about">
-            <div class ="scroll">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">Hey, I'm</p>
+            <h1 class="hero-name">Rohan Batra</h1>
+            <div class="hero-accent"></div>
+            <p class="hero-subtitle">Software Engineer @ AWS &nbsp;·&nbsp; Kellogg MBA Candidate</p>
+            <p class="hero-tagline">Feel free to learn more about me by scrolling below!</p>
+            <a href="#about" class="hero-scroll" aria-label="Scroll to About">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
             </a>
         </div>
     </section>
-    <div class="about" id = "about">
-        <h2>About Me</h2>
-        <div class="image-txt-container">
-            <img src="images/batra.jpg" alt="Profile Picture" height=400px width=300px>
-            <p> <br><br>I am currently a Software Engineer at Amazon Web Services in Seattle, Washington. I recently completed my undergraduate studies at the University of Michigan, Ann Arbor. Go Blue! At Michigan, I took courses ranging from Operating Systems to Social Psychology. In my free time, I like to dance, watch Netflix, and play basketball. <br><br>
-            Feel free to contact me at batrar@umich.edu or message me on any of my accounts down below!
-            </p>
-            <img src="images/umich.png" alt="University of Michigan" style="margin-right: 230px;">
-        </div>
-    </div>
-   <hr>
-    <div class="experience" id = "experience">
-        <h2>Experience</h2>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
         <div class="container">
-            <div class="block" style="background-color: rgba(255, 164, 89, 0.5);">
-              <h2><br>Amazon</h2>
-              <p>Software Engineer & Former Intern - Current<br><br> AWS Security</p>
-              <img src="images/aws.png" alt = "Amazon" width= 150px height = 100px style="margin: auto;">
-            </div>
-            <div class="block" style="background-color: rgba(0, 247, 214, 0.5);">
-                <h2><br>Garmin International</h2>
-                <p>Software Engineering Intern - Summer 2019 <br><br> Automotive OEM</p>
-                <img src="images/garmin2.png" alt = "Garmin" width= 150px height = 100px style="margin: auto; ">
-            </div>
-              <div class="block" style="background-color: rgba(245, 97, 116, 0.5);">
-                <h2><br>ZF, North America</h2>
-                <p>Data Science Intern - Summer 2018 <br><br> IT Innovation</p>
-                <img src="images/zf.png" alt = "ZF" width= 160px height = 100px style="margin: auto;">
-              </div>
-          </div>
-    </div>
-    <hr>
-    <div class="interests" id= "interests">
-        <h2 >Interests</h2>
-        <div class="containerhorizontal">
-            <button class="accordion"><h2>Sports</h2></button>
-            <div class="accordion-content" style="background-color:rgb(0, 255, 252);">
-            <p>
-                <br>
-            As a Michigan native, I have grown up to watching Detroit sports. In my free time, though, I like to play pickup basketball, watch  NBA and college basketball/football, and play fantasy football. Here are some teams that I am a fan of:
-            <br> <br>
-            </p>
-
-            <img src="images/michbball.png" alt = "UMichBall" width= 150px height = 150px style="margin: auto;">
-            <img src="images/lakers.png" alt = "Lakers" width= 200px height = 150px style="margin: auto;">
-            <img src="images/lions.png" alt = "Lions" width= 150px height = 150px style="margin-left: 10px;">
-            <img src="images/pistons.png" alt = "Pistons" width= 150px height = 150 style="margin-left: 10px;">
-            <img src="images/raps.png" alt = "Raptors" width= 150px height = 150 style="margin-left: 10px;">
-        </div>
-        
-            <button class="accordion" ><h2>Fashion</h2></button>
-            <div class="accordion-content" style="background-color:rgb(250, 0, 196);" >
-            <p>
-                <br>
-                In the past few years, I have been a follower of streetwear, which has opened my eyes up to a whole new sphere of clothing. Here are some brands that I am a fan of:
-                <br><br>
-            </p>
-            <img src="images/kith.png" alt = "Supreme" width= 200px height = 100px style="margin-left: 20px; padding-bottom: 20px; ">
-            <img src="images/ovo.png" alt = "OVO" width= 100px height = 120px style="margin-left: 20px;padding-bottom: 20px; ">
-            <img src="images/patagonia.png" alt = "Patagonia" width= 150px height = 170px style="margin-left: 20px; display: inline-block;">
-            <img src="images/adidas.png" alt = "Adidas" width= 115px height = 150px style="margin-left: 20px; padding-bottom: 10px;">
-            <img src="images/nike.png" alt = "Nike" width= 150px height = 100px style="margin-left: 30px; margin-right:auto; padding-bottom: 20px">
-            </div>
-        
-        
-            <button class="accordion" ><h2>Dancing</h2></button>
-            <div class="accordion-content" style= "background-color:rgb(255, 241, 112);">
-            <p>
-                <br>
-                For the last couple years, I have been involved in a competitive dance-style called Bhangra (Indian Folk Dance). It is essentially a year-long committment with competitions all around the world. Here is a video of my dance team getting first place recently (I am in the yellow): 
-               <br> <br>
-               <iframe width="560" height="315" style="display:block; margin: auto" src="https://www.youtube.com/embed/s45jeJwcWlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <br>
-            </p>
-            </div>
-
-            <div class="footer">
-                <nav style="margin: auto;">
-                    <ul>
-                        <a></a>
-                        <a href="https://www.linkedin.com/in/rohan-batra-b92699111/" target="_blank" class="fa fa-linkedin" ></a>
-                        <a href="mailto:batrar@umich.edu" target="_blank" class="fa fa-envelope"></a>
-                        <a href="https://www.facebook.com/robatra13" target="_blank" class="fa fa-facebook"></a>
-                    </ul>
-                </nav>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="images/profilepic.jpg" alt="Rohan Batra">
+                </div>
+                <div class="about-text">
+                    <p>I am currently a Software Engineer at Amazon Web Services and a part-time MBA student at Northwestern University's Kellogg School of Management in Chicago, Illinois. I completed my undergraduate studies at the University of Michigan, Ann Arbor. <span class="go-blue">Go Blue!</span></p>
+                    <p>I am passionate about solving problems through the lens of both a business and tech leader.</p>
+                    <p class="about-contact">Feel free to reach out at <a href="mailto:batrar@umich.edu">batrar@umich.edu</a> or connect with me on <a href="https://www.linkedin.com/in/batra-rohan/" target="_blank">LinkedIn</a>.</p>
+                    <div class="school-logos">
+                        <img src="images/umich.png" alt="University of Michigan" class="umich-logo">
+                        <img src="images/kellogg.png" alt="Kellogg School of Management" class="umich-logo">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <script src="scripts/filename.js"></script>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-logo-wrap"><img src="images/aws.png" alt="Amazon Web Services" class="card-logo"></div>
+                    <h3 class="card-company">Amazon</h3>
+                    <p class="card-role">Software Engineer</p>
+                    <p class="card-division">AWS Security &nbsp;·&nbsp; Current</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-logo-wrap"><img src="images/garmin2.png" alt="Garmin" class="card-logo"></div>
+                    <h3 class="card-company">Garmin International</h3>
+                    <p class="card-role">Software Engineering Intern</p>
+                    <p class="card-division">Automotive OEM &nbsp;·&nbsp; Summer 2019</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-logo-wrap"><img src="images/zf.png" alt="ZF" class="card-logo"></div>
+                    <h3 class="card-company">ZF, North America</h3>
+                    <p class="card-role">Data Science Intern</p>
+                    <p class="card-division">IT Innovation &nbsp;·&nbsp; Summer 2018</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section interests" id="interests">
+        <div class="container">
+            <h2 class="section-title">Interests</h2>
+        </div>
+        <div class="accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>Sports</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-panel-inner">
+                        <p>As a Michigan native, I have grown up watching Detroit sports. In my free time, I like to play pickup basketball, watch NBA and college basketball/football, and play fantasy football. Here are some teams I'm a fan of:</p>
+                        <div class="interest-images">
+                            <img src="images/michbball.png" alt="UMich Basketball">
+                            <img src="images/lions.png" alt="Lions">
+                            <img src="images/pistons.png" alt="Pistons">
+                            <img src="images/lakers.png" alt="Lakers">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>Fashion</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-panel-inner">
+                        <p>In the past few years, I have been a follower of streetwear, which has opened my eyes up to a whole new sphere of clothing. Here are some brands I'm a fan of:</p>
+                        <div class="interest-images">
+                            <img src="images/kith.png" alt="Kith">
+                            <img src="images/ovo.png" alt="OVO">
+                            <img src="images/patagonia.png" alt="Patagonia">
+                            <img src="images/adidas.png" alt="Adidas">
+                            <img src="images/nike.png" alt="Nike">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>Dancing</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-panel-inner">
+                        <p>For the last couple years, I have been involved in a competitive dance style called Bhangra (Indian Folk Dance). It is essentially a year-long commitment with competitions all around the world. Here is a video of my dance team getting first place recently (I am in the yellow):</p>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/s45jeJwcWlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/batra-rohan/" target="_blank" aria-label="LinkedIn" class="footer-icon">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="mailto:batrar@umich.edu" aria-label="Email" class="footer-icon">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Rohan Batra</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
-
-
